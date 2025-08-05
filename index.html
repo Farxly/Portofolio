@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portofolio Farxly</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <canvas id="bg"></canvas>
+
+  <audio autoplay loop id="bg-music">
+    <source src="https://files.catbox.moe/k8gbps.mp3" type="audio/mpeg" />
+  </audio>
+
+  <nav class="navbar">
+    <button onclick="scrollToSection('profile')">Profil</button>
+    <button onclick="scrollToSection('projects')">Project</button>
+    <button onclick="scrollToSection('services')">Produk</button>
+    <button onclick="scrollToSection('contact')">Kontak</button>
+  </nav>
+
+  <main>
+    <section id="profile" class="section">
+      <img src="https://files.catbox.moe/7s0q1k.jpeg" alt="Foto Farxly" class="profile-pic" />
+      <h1>Farxly</h1>
+      <p class="dob">Tanggal Lahir: 11 Mei 2011</p>
+      <p class="desc">
+        Nama ku Farxly. Gue seorang developer bot dan pecinta teknologi bawah tanah. Dunia coding itu kaya seni bagi gue. 
+        Gue gak cuma bikin script, tapi gue ngulik. Mulai dari automation sampai tools testing jaringan.
+        Gak banyak omong, kerja jalan terus. Arang, diam, tapi meledak. Semangat tetap dingin, tangan tetap panas ngetik baris demi baris kode.
+      </p>
+    </section>
+
+    <section id="projects" class="section">
+      <h2>Project</h2>
+      <div class="project">
+        <img src="https://files.catbox.moe/gcd1wo.jpeg" class="project-img" />
+        <h3>Script Bot WhatsApp</h3>
+        <p>Bot WA cerdas yang bisa kirim otomatis, cek database, bikin grup, dan banyak lagi. Cocok buat komunitas, bisnis, bahkan prank.</p>
+      </div>
+      <div class="project">
+        <img src="https://files.catbox.moe/rwj4gn.jpeg" class="project-img" />
+        <h3>DDoS Tools</h3>
+        <p>Simulasi DDoS untuk menguji kekuatan server. Dibuat hanya untuk edukasi dan testing jaringan. Arang banget orang pegang.</p>
+      </div>
+      <div class="project">
+        <img src="https://files.catbox.moe/c95u9j.jpeg" class="project-img" />
+        <h3>Game Developer</h3>
+        <p>Membuat game kecil tapi padat fitur. Fokus ke desain GUI dan gameplay. Sudah dibuat di Roblox dan WebGL.</p>
+      </div>
+    </section>
+
+    <section id="services" class="section">
+      <h2>Produk & Layanan</h2>
+      <div class="service">
+        <h3>🟢 Pembuatan Bot WhatsApp</h3>
+        <ul>
+          <li>Auto-respon dengan perintah khusus</li>
+          <li>Integrasi API (jadwal, pembayaran, info otomatis)</li>
+          <li>Sistem admin, anti-spam, limit, dan logging</li>
+        </ul>
+        <p>Bot dibuat efisien, cepat, dan siap dipakai 24/7. Arang tapi nancep!</p>
+      </div>
+      <div class="service">
+        <h3>🛡️ Proteksi dan Uji DDoS</h3>
+        <ul>
+          <li>Menguji kekuatan server dari serangan real</li>
+          <li>Meningkatkan keamanan dengan simulasi</li>
+        </ul>
+        <p>Layanan ini hanya untuk edukasi dan testing internal.</p>
+      </div>
+      <div class="service">
+        <h3>🌐 Jasa Pembuatan Website</h3>
+        <ul>
+          <li>Custom HTML/CSS/JS tanpa template pasaran</li>
+          <li>Dark mode, neon UI, atau tema sesuai brand</li>
+        </ul>
+        <p>Desain fleksibel. Mau gaya hacker? Bisnis? Semua bisa.</p>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Kontak</h2>
+      <p>Langsung aja hubungi WA di bawah.</p>
+      <a href="https://wa.me/62881037400856" target="_blank" class="whatsapp-business">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WA" width="20" style="vertical-align: middle; margin-right: 10px;" />
+        Hubungi via WhatsApp Bisnis
+      </a>
+    </section>
+  </main>
+
+  <script src="stars.js"></script>
+  <script>
+    function scrollToSection(id) {
+      document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>
